@@ -3,12 +3,12 @@ import React, {useState} from 'react';
 import './Node.css';
 
 function Node (props) {
-  const isFinish = props.isFinish
-  const isStart = props.isStart
-  const extraClassName = isFinish
+  const extraClassName = props.isFinish
     ? 'node-finish'
-    : isStart
+    : props.isStart
     ? 'node-start'
+    : props.isVisited
+    ? 'node-visited'
     : '';
 
   return (
