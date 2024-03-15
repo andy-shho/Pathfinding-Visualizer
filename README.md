@@ -5,7 +5,8 @@ Overview:
 ---------
 The Pathfinding Visualizer is an application that visually demonstrates Dijkstra's Algorithm using nodes and walls. The application includes a resizable grid, a start and finish node selector, and a reset function. I plan on adding different algorithms to this application in the future.
 
-![GIF expired](https://recordit.co/z4GwrakA2q)
+![GIF expired](http://g.recordit.co/z4GwrakA2q.gif)
+
 
 Built With:
 -------------
@@ -22,7 +23,7 @@ To get a local copy up and running follow these simple steps:
 
 `git clone https://github.com/andy-shho/Pathfinding-Visualizer.git`
 
-2. Intall NPM packages
+2. Install NPM packages
 
 `npm install`
 
