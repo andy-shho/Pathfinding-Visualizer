@@ -1,5 +1,6 @@
 Pathfinding Visualizer
 =================================
+A Project to Better Understand Data Structure and Algorithms
 
 Overview:
 ---------
