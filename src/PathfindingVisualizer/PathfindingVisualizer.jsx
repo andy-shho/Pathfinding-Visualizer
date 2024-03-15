@@ -45,12 +45,12 @@ function PathfindingVisualizer () {
       }
       setTimeout(() => {
         const node = visitedNodesInOrder[i];
-        const newGrid = grid.slice();
-        const newNode = {
-          ...node,
-          isVisited: true,
-        };
-        newGrid[node.row][node.col] = newNode;
+        // const newGrid = grid.slice();
+        // const newNode = {
+        //   ...node,
+        //   isVisited: true,
+        // };
+        // newGrid[node.row][node.col] = newNode;
         document.getElementById(`node-${node.row}-${node.col}`).className = 'node node-visited';
       }, 10 * i)
     }
@@ -59,9 +59,9 @@ function PathfindingVisualizer () {
   const animateShortestPath = function(nodesInShortestPathOrder) {
     for (let i = 0; i < nodesInShortestPathOrder.length; i++) {
       setTimeout(() => {
-        const node = nodesInShortestPathOrder[i]
-        document.getElementById(`node-${node.row}-${node.col}`).className = 'node node-shortest-path'
-      }, 10 * i)
+        const node = nodesInShortestPathOrder[i];
+        document.getElementById(`node-${node.row}-${node.col}`).className = 'node node-shortest-path';
+      }, 50 * i)
     }
   }
 
@@ -71,11 +71,11 @@ function PathfindingVisualizer () {
     const finishNode = grid[FINISH_ROW][FINISH_COL];
     const visitedNodesInOrder = dijkstra(grid, startNode, finishNode);
     const nodesInShortestPathOrder = getNodesInShortestPathOrder(finishNode);
-    animateDijkstra(visitedNodesInOrder, nodesInShortestPathOrder)
+    animateDijkstra(visitedNodesInOrder, nodesInShortestPathOrder);
   };
   return (
     <>
-      <button onClick = {visualizeDijkstra}>
+      <button className="visualize" onClick = {visualizeDijkstra}>
         Visualize Dijkstra's Algorithm
       </button>
       <div className="grid">

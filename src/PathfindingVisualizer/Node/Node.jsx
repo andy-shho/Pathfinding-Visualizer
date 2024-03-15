@@ -7,8 +7,6 @@ function Node (props) {
     ? 'node-finish'
     : props.isStart
     ? 'node-start'
-    : props.isVisited
-    ? 'node-visited'
     : props.isWall
     ? 'node-wall'
     : '';
