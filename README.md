@@ -8,7 +8,6 @@ The Pathfinding Visualizer is an application that visually demonstrates Dijkstra
 
 ![GIF expired](https://github.com/andy-shho/Portfolio/blob/master/src/assets/img/pathfinding.gif)
 
-
 Built With:
 -------------
 * [React](https://reactjs.org/)
